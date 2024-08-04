@@ -1,10 +1,20 @@
-import './global.css';
+import "./global.css";
 
-import './App.module.css';
-import { Header } from './components/Header';
+import styles from "./App.module.css";
+import { Header } from "./components/Header";
 
 export function App() {
-  return (
-    <Header />
-  )
+	return (
+		<main>
+			<Header />
+
+			<section>
+				<div className={styles.taskForm}>
+
+				</div>
+
+				<div className={styles.taskList}></div>
+			</section>
+		</main>
+	);
 }
